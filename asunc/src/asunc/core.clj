@@ -55,10 +55,14 @@
 
     (a/go-loop
      [cntr 0]
+    ;  when channel is full, will be blocked and cannot overload
+     ;  basically sits and waits until a spot is open on the channel
+     ;  even tho they are working very fast in comparison to the SUB
+    
      (if (a/>! mychan1 (str "part-" cntr))
        (do
          (println (str "added part " cntr))
-         (Thread/sleep 222)
+         (Thread/sleep 50)
          (recur (inc cntr)))
        (println "all done adding parts")))
     
