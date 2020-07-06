@@ -1,0 +1,3 @@
+# Introduction to pracreduc
+
+TODO: write [great documentation](http://jacobian.org/writing/what-to-write/)
