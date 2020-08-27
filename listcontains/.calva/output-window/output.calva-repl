@@ -1,0 +1,294 @@
+; This is the Calva evaluation results output window.
+; Leave it open, please. Because quirks.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - File URLs in stacktrace frames are peekable and clickable.
+clj::listcontains.core=> 
+; Jack-in done.
+; Evaluating file: core.clj
+; Syntax error compiling at (src/listcontains/core.clj:1:1).
+; Unable to resolve symbol: s in this context
+hello world
+nil
+clj::listcontains.core=> 
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: core.clj
+nil
+clj::listcontains.core=> 
+[1 2 3 4 5]
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+nil
+clj::listcontains.core=> 
+1000
+clj::listcontains.core=> 
+; Execution error (IllegalArgumentException) at listcontains.core/eval15973 (form-init9415521795729245186.clj:13).
+; contains? not supported on type: java.lang.Long
+[{:file "RT.java" :line 853 :method "contains" :flags [:java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:1492" :fn "contains?"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:1484" :fn "contains?"  :method "invoke" :flags [:clj]}
+ {:file "file:/Users/gkspranger/git/hackclojure/listcontains/src/listcontains/core.clj:13" :fn "eval15973"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/gkspranger/git/hackclojure/listcontains/src/listcontains/core.clj:13" :fn "eval15973"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::listcontains.core=> 
+; Execution error (IllegalArgumentException) at listcontains.core/eval16010 (form-init9415521795729245186.clj:13).
+; contains? not supported on type: clojure.lang.LongRange
+[{:file "RT.java" :line 853 :method "contains" :flags [:java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:1492" :fn "contains?"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:1484" :fn "contains?"  :method "invoke" :flags [:clj]}
+ {:file "file:/Users/gkspranger/git/hackclojure/listcontains/src/listcontains/core.clj:13" :fn "eval16010"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/gkspranger/git/hackclojure/listcontains/src/listcontains/core.clj:13" :fn "eval16010"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+nil
+clj::listcontains.core=> 
+1000
+clj::listcontains.core=> 
+true
+clj::listcontains.core=> 
+10
+clj::listcontains.core=> 
+false
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+nil
+clj::listcontains.core=> 
+true
+clj::listcontains.core=> 
+false
+clj::listcontains.core=> 
+false
+clj::listcontains.core=> 
+true
+clj::listcontains.core=> 
+false
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world(#object[java.io.File 0x57ac4fc3 .] #object[java.io.File 0x71428a37 ./project.clj] #object[java.io.File 0x7dcd7209 ./.calva] #object[java.io.File 0x1362dbb7 ./.calva/output-window] #object[java.io.File 0x26055c4f ./.calva/output-window/output.calva-repl] #object[java.io.File 0x4373698a ./.calva/output-window/.clj-kondo] #object[java.io.File 0x553816d7 ./.calva/output-window/.clj-kondo/config.edn] #object[java.io.File 0x5082d0a4 ./.calva/output-window/.clj-kondo/.cache] #object[java.io.File 0x5ce909df ./.calva/output-window/.clj-kondo/.cache/2020.07.29] #object[java.io.File 0x48e04f1 ./.calva/output-window/.clj-kondo/.cache/2020.07.29/lock] #object[java.io.File 0x11152419 ./LICENSE] #object[java.io.File 0x57d4d16f ./test] #object[java.io.File 0x43679dbb ./test/listcontains] #object[java.io.File 0x37baa0aa ./test/listcontains/core_test.clj] #object[java.io.File 0xf376fa8 ./CHANGELOG.md] #object[java.io.File 0x7e199888 ./target] #object[java.io.File 0x16c58b5 ./target/default] #object[java.io.File 0x6
+3b107c2 ./target/default/classes] #object[java.io.File 0x574f7e33 ./target/default/classes/META-INF] #object[java.io.File 0x6520718a ./target/default/classes/META-INF/maven] #object[java.io.File 0x66a346b ./target/default/classes/META-INF/maven/listcontains] #object[java.io.File 0x6d8eac73 ./target/default/classes/META-INF/maven/listcontains/listcontains] #object[java.io.File 0x411cf917 ./target/default/classes/META-INF/maven/listcontains/listcontains/pom.properties] #object[java.io.File 0x27567c9f ./target/default/stale] #object[java.io.File 0x70c8cd72 ./target/default/stale/leiningen.core.classpath.extract-native-dependencies] #object[java.io.File 0x683d0a2c ./target/default/repl-port] #object[java.io.File 0x4e4f827d ./.hgignore] #object[java.io.File 0x5ae9bdaf ./resources] #object[java.io.File 0x6cfc48dd ./.nrepl-port] #object[java.io.File 0x6c905304 ./README.md] #object[java.io.File 0x5efe7881 ./.gitignore] #object[java.io.File 0x49eda234 ./doc] #object[java.io.File 0x4759a174 ./doc/intro.md] #object[java
+.io.File 0x293fc2e8 ./src] #object[java.io.File 0x4289d3e ./src/listcontains] #object[java.io.File 0x2070738d ./src/listcontains/core.clj])
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world(#object[java.io.File 0x78b68070 .])
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+; Syntax error (IllegalArgumentException) compiling at (src/listcontains/core.clj:14:1).
+; No matching field found: getFileName for class clojure.lang.LazySeq
+Hello world
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: core.clj
+; Syntax error (IllegalArgumentException) compiling at (src/listcontains/core.clj:14:1).
+; No matching field found: isFile for class clojure.lang.LazySeq
+Hello world
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+; Execution error (IllegalArgumentException) at listcontains.core/eval20195 (form-init9415521795729245186.clj:14).
+; No matching field found: getName for class clojure.lang.LazySeq
+[{:file "Reflector.java" :line 397 :method "getInstanceField" :flags [:java]}
+ {:file "Reflector.java" :line 440 :method "invokeNoArgInstanceMember" :flags [:java]}
+ {:file "file:/Users/gkspranger/git/hackclojure/listcontains/src/listcontains/core.clj:14" :fn "eval20195"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/Users/gkspranger/git/hackclojure/listcontains/src/listcontains/core.clj:14" :fn "eval20195"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world(#object[java.io.File 0x16de97f5 .])
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+; Syntax error (IllegalArgumentException) compiling at (src/listcontains/core.clj:14:1).
+; No matching field found: getName for class clojure.lang.LazySeq
+Hello world
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: core.clj
+; Syntax error (NullPointerException) compiling at (src/listcontains/core.clj:14:1).
+; null
+Hello world
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: core.clj
+Hello world
+(#object[java.io.File 0x2cc60156 .] #object[java.io.File 0x36d3c6ae ./project.clj] #object[java.io.File 0x3020c8ba ./.calva] #object[java.io.File 0x3bd2ffa1 ./.calva/output-window] #object[java.io.File 0x2782853c ./.calva/output-window/output.calva-repl] #object[java.io.File 0xf4cc1d4 ./.calva/output-window/.clj-kondo] #object[java.io.File 0x399fad9f ./.calva/output-window/.clj-kondo/config.edn] #object[java.io.File 0x151c72fa ./.calva/output-window/.clj-kondo/.cache] #object[java.io.File 0x2604ae00 ./.calva/output-window/.clj-kondo/.cache/2020.07.29] #object[java.io.File 0x4faf8975 ./.calva/output-window/.clj-kondo/.cache/2020.07.29/lock] #object[java.io.File 0xb98364a ./LICENSE] #object[java.io.File 0x7d651e61 ./test] #object[java.io.File 0x7e12cb63 ./test/listcontains] #object[java.io.File 0x4d4501f5 ./test/listcontains/core_test.clj] #object[java.io.File 0x7a55471 ./CHANGELOG.md] #object[java.io.File 0x5266d4f2 ./target] #object[java.io.File 0x3ac7440e ./target/default] #object[java.io.File 0x5f68b00a ./t
+arget/default/classes] #object[java.io.File 0x7243614a ./target/default/classes/META-INF] #object[java.io.File 0x16e6eab4 ./target/default/classes/META-INF/maven] #object[java.io.File 0x16813b52 ./target/default/classes/META-INF/maven/listcontains] #object[java.io.File 0xc732168 ./target/default/classes/META-INF/maven/listcontains/listcontains] #object[java.io.File 0x6553489d ./target/default/classes/META-INF/maven/listcontains/listcontains/pom.properties] #object[java.io.File 0x44c1adc9 ./target/default/stale] #object[java.io.File 0x5b0545a8 ./target/default/stale/leiningen.core.classpath.extract-native-dependencies] #object[java.io.File 0x4e6857c1 ./target/default/repl-port] #object[java.io.File 0x3100e931 ./.hgignore] #object[java.io.File 0x7866a53d ./resources] #object[java.io.File 0x93f979c ./.nrepl-port] #object[java.io.File 0x5e50f25 ./README.md] #object[java.io.File 0x339a37c9 ./.gitignore] #object[java.io.File 0x7e1823ca ./doc] #object[java.io.File 0xbeed8e2 ./doc/intro.md] #object[java.io.File 0x26d
+f629d ./src] #object[java.io.File 0x44992df0 ./src/listcontains] #object[java.io.File 0x7b2040da ./src/listcontains/core.clj])
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+#object[java.io.File 0x7bd72813 .]
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+#object[java.io.File 0x51a960b1 .]
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+#object[java.io.File 0x6190a54 .]
+.
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+; Syntax error compiling at (src/listcontains/core.clj:15:1).
+; Unable to resolve symbol: file-names in this context
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: core.clj
+Hello world
+(. project.clj .calva output-window output.calva-repl .clj-kondo config.edn .cache 2020.07.29 lock LICENSE test listcontains core_test.clj CHANGELOG.md target default classes META-INF maven listcontains listcontains pom.properties stale leiningen.core.classpath.extract-native-dependencies repl-port .hgignore resources .nrepl-port README.md .gitignore doc intro.md src listcontains core.clj)
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+(#object[java.io.File 0x1ad98725 ./project.clj] #object[java.io.File 0x6ddee72b ./.calva/output-window/output.calva-repl] #object[java.io.File 0x55ddce79 ./.calva/output-window/.clj-kondo/config.edn] #object[java.io.File 0xe781aac ./.calva/output-window/.clj-kondo/.cache/2020.07.29/lock] #object[java.io.File 0x584e54e9 ./LICENSE] #object[java.io.File 0x42b31774 ./test/listcontains/core_test.clj] #object[java.io.File 0x1d069cb2 ./CHANGELOG.md] #object[java.io.File 0x475430d1 ./target/default/classes/META-INF/maven/listcontains/listcontains/pom.properties] #object[java.io.File 0xb847b29 ./target/default/stale/leiningen.core.classpath.extract-native-dependencies] #object[java.io.File 0x17a055e1 ./target/default/repl-port] #object[java.io.File 0x3eeab8ab ./.hgignore] #object[java.io.File 0x585ec51f ./.nrepl-port] #object[java.io.File 0x702bb00e ./README.md] #object[java.io.File 0x6531fcb7 ./.gitignore] #object[java.io.File 0xef52f5a ./doc/intro.md] #object[java.io.File 0x20ad65a6 ./src/listcontains/core.clj])
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+(#object[java.io.File 0x190a4047 ./project.clj] #object[java.io.File 0x74777d03 ./.calva/output-window/output.calva-repl] #object[java.io.File 0x22b4707a ./.calva/output-window/.clj-kondo/config.edn] #object[java.io.File 0x7a965389 ./.calva/output-window/.clj-kondo/.cache/2020.07.29/lock] #object[java.io.File 0x31552ce4 ./LICENSE] #object[java.io.File 0x7e05c0a8 ./test/listcontains/core_test.clj] #object[java.io.File 0x7fb358b2 ./CHANGELOG.md] #object[java.io.File 0x377156d6 ./target/default/classes/META-INF/maven/listcontains/listcontains/pom.properties] #object[java.io.File 0x2f5b6ed0 ./target/default/stale/leiningen.core.classpath.extract-native-dependencies] #object[java.io.File 0x7f0beb13 ./target/default/repl-port] #object[java.io.File 0x1a185a88 ./.hgignore] #object[java.io.File 0x276278fb ./.nrepl-port] #object[java.io.File 0x53bbaf29 ./README.md] #object[java.io.File 0x73c8853e ./.gitignore] #object[java.io.File 0x2bdc5dd5 ./doc/intro.md] #object[java.io.File 0x1fcd4df5 ./src/listcontains/core.clj])
+project.clj
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+(#object[java.io.File 0x3a93c3fe ./project.clj] #object[java.io.File 0x4e9856ff ./.calva/output-window/output.calva-repl] #object[java.io.File 0x13bdaf2f ./.calva/output-window/.clj-kondo/config.edn] #object[java.io.File 0x943f427 ./.calva/output-window/.clj-kondo/.cache/2020.07.29/lock] #object[java.io.File 0x2d6b5ac2 ./LICENSE] #object[java.io.File 0x21c8de3e ./test/listcontains/core_test.clj] #object[java.io.File 0x5ff2d9ff ./CHANGELOG.md] #object[java.io.File 0x4986fcea ./target/default/classes/META-INF/maven/listcontains/listcontains/pom.properties] #object[java.io.File 0x3e4c1252 ./target/default/stale/leiningen.core.classpath.extract-native-dependencies] #object[java.io.File 0x5992128b ./target/default/repl-port] #object[java.io.File 0x10660567 ./.hgignore] #object[java.io.File 0x6ef9da2d ./.nrepl-port] #object[java.io.File 0x30f98b22 ./README.md] #object[java.io.File 0x7936d1fc ./.gitignore] #object[java.io.File 0x59dbae80 ./doc/intro.md] #object[java.io.File 0x79532f24 ./src/listcontains/core.clj])
+project.clj
+output.calva-repl
+config.edn
+lock
+LICENSE
+core_test.clj
+CHANGELOG.md
+pom.properties
+leiningen.core.classpath.extract-native-dependencies
+repl-port
+.hgignore
+.nrepl-port
+README.md
+.gitignore
+intro.md
+core.clj
+nil
+clj::listcontains.core=> 
+; Evaluating file: core.clj
+Hello world
+project.clj
+output.calva-repl
+config.edn
+lock
+LICENSE
+core_test.clj
+CHANGELOG.md
+pom.properties
+leiningen.core.classpath.extract-native-dependencies
+repl-port
+.hgignore
+.nrepl-port
+README.md
+.gitignore
+intro.md
+core.clj
+no more files
+nil
+clj::listcontains.core=> 
