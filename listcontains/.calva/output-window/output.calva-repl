@@ -292,3 +292,6 @@ core.clj
 no more files
 nil
 clj::listcontains.core=> 
+; Evaluating file: core.clj
+nil
+clj::fifo.core=> 

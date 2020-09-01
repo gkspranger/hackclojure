@@ -1,0 +1,187 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - File URLs in stacktrace frames are peekable and clickable.
+clj::fifo.core=> 
+; Jack-in done.
+; Evaluating file: core.clj
+nil
+clj::fifo.core=> 
+#function[clojure.core/println]
+clj::fifo.core=> 
+hello world
+nil
+clj::fifo.core=> 
+(2 3 4)
+clj::fifo.core=> 
+(2 3 4)
+clj::fifo.core=> 
+; Evaluating file: core.clj
+nil
+clj::fifo.core=> 
+#object[clojure.lang.PersistentQueue 0x584be928 "clojure.lang.PersistentQueue@1"]
+nil
+clj::fifo.core=> 
+nil
+clj::fifo.core=> 
+; Evaluating file: core.clj
+nil
+clj::fifo.core=> 
+nil
+clj::fifo.core=> 
+nil
+clj::fifo.core=> 
+#function[clojure.core/peek]
+clj::fifo.core=> 
+[]
+clj::fifo.core=> 
+[]
+clj::fifo.core=> 
+; Evaluating file: core.clj
+nil
+clj::fifo.core=> 
+1
+clj::fifo.core=> 
+[2 3]
+clj::fifo.core=> 
+; Evaluating file: core.clj
+nil
+clj::fifo.core=> 
+[2 3]
+clj::fifo.core=> 
+1
+clj::fifo.core=> 
+; Evaluating file: lifo.clj
+nil
+clj::fifo.lifo=> 
+; Evaluating file: lifo.clj
+#'fifo.lifo/add-todo!
+clj::fifo.lifo=> 
+; Evaluating file: lifo.clj
+#'fifo.lifo/add-todo!
+clj::fifo.lifo=> 
+; Evaluating file: lifo.clj
+nil
+clj::fifo.lifo=> 
+; Evaluating file: lifo.clj
+nil
+clj::fifo.lifo=> 
+["step 1" "step 2" "step 3"]
+clj::fifo.lifo=> 
+[step 1 step 2 step 3]
+nil
+clj::fifo.lifo=> 
+#atom[[step 1 step 2 step 3] 0x590c9da7]
+nil
+clj::fifo.lifo=> 
+; Evaluating file: lifo.clj
+nil
+clj::fifo.lifo=> 
+[]
+nil
+clj::fifo.lifo=> 
+#atom[[] 0x5a093de9]
+nil
+clj::fifo.lifo=> 
+["step 1" "step 2" "step 3"]
+clj::fifo.lifo=> 
+#atom[[step 1 step 2 step 3] 0x5a093de9]
+nil
+clj::fifo.lifo=> 
+[step 1 step 2 step 3]
+nil
+clj::fifo.lifo=> 
+[step 1 step 2 step 3]
+nil
+clj::fifo.lifo=> 
+[step 1 step 2 step 3]
+nil
+clj::fifo.lifo=> 
+; Evaluating file: lifo.clj
+; Syntax error compiling at (src/fifo/lifo.clj:12:5).
+; Unable to resolve symbol: pri in this context
+; Evaluation of file lifo.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: lifo.clj
+nil
+clj::fifo.lifo=> 
+; Execution error (IllegalStateException) at fifo.lifo/get-todo! (lifo.clj:10).
+; Can't pop empty vector
+[{:file "PersistentVector.java" :line 470 :method "pop" :flags [:java]}
+ {:file "PersistentVector.java" :line 22 :method "pop" :flags [:dup :java]}
+ {:file "RT.java" :line 755 :method "pop" :flags [:java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:1474" :fn "pop"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:1467" :fn "pop"  :method "invoke" :flags [:clj]}
+ {:file "Atom.java" :line 93 :method "swapVals" :flags [:java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:2363" :fn "swap-vals!"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:2357" :fn "swap-vals!"  :method "invoke" :flags [:clj]}
+ {:file "file:/Users/gkspranger/git/hackclojure/fifo/src/fifo/lifo.clj:10" :fn "get-todo!"  :method "invokeStatic" :flags [:clj]}
+ {:file "file:/Users/gkspranger/git/hackclojure/fifo/src/fifo/lifo.clj:9" :fn "get-todo!"  :method "invoke" :flags [:clj]}
+ {:file "file:/Users/gkspranger/git/hackclojure/fifo/src/fifo/lifo.clj:23" :fn "eval19395"  :method "invokeStatic" :flags [:repl :clj]}
+ {:file "file:/Users/gkspranger/git/hackclojure/fifo/src/fifo/lifo.clj:23" :fn "eval19395"  :method "invoke" :flags [:dup :repl :clj]}
+ {:file "Compiler.java" :line 7177 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7132 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:437" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:458" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/org/clojure/clojure/1.10.1/clojure-1.10.1.jar!/clojure/main.clj:368" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/Users/gkspranger/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::fifo.lifo=> 
+; Evaluating file: lifo.clj
+nil
+clj::fifo.lifo=> 
+[step 1 step 2 step 3]
+[step 1 step 2]
+nil
+nil
+clj::fifo.lifo=> 
+; Evaluating file: lifo.clj
+nil
+clj::fifo.lifo=> 
+[step 1 step 2 step 3]
+[step 1 step 2]
+nil
+nil
+clj::fifo.lifo=> 
+; Evaluating file: lifo.clj
+nil
+clj::fifo.lifo=> 
+step 3
+nil
+clj::fifo.lifo=> 
+; Evaluating file: lifo.clj
+nil
+clj::fifo.lifo=> 
+step 3
+nil
+clj::fifo.lifo=> (+ 1 2)
+
+
+
+
+
+3
+clj::fifo.lifo=> 
+; nREPL Connection was closed
